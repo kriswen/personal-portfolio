@@ -78,7 +78,7 @@ hr {
 }
 
 .hero-header {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin: 1rem;
     display: flex;
 }
@@ -122,7 +122,7 @@ hr {
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
     grid-template-rows:  repeat(auto-fill,1fr);
     justify-items: center;
     margin: 20px 50px 20px 50px;
