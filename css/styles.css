@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+body {
+    font-family: "Share Tech Mono", monospace;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 1.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+li {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color:black;
+}
+
+hr {
+    border: dotted #727171 6px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    margin: 20px;
+    width: 40%;
+
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #040404, #c3a1a1, #727171);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+.nav-container {
+    display:flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    background-color: 000;
+}
+
+.nav-item {
+    background-color: lightcyan;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 5px 20px 5px 20px;
+    color: black;
+    font-size: 1.6rem;
+}
+
+.hero-container{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("./images/hero-background.jpg");
+}
+
+.hero-image {
+    border-radius: 50%;
+    margin: 10px 0 10px 0;
+    width: 100px;
+}
+
+.hero-header {
+    font-size: 4rem;
+    margin: 1rem;
+    display: flex;
+}
+
+.hero-text {
+    font-size: 1.5rem;
+    font-style:italic;
+    margin: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items:center;
+}
+
+.flex-item {
+    max-width: 1200px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    gap: 2rem;
+}
+
+
+.grid-item {
+
+}
+
+
+.skill-icon {
+    height: 3rem;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-template-rows:  1fr 1fr;
+    justify-items: center;
+    margin: 20px 50px 20px 50px;
+    gap: 2rem;
+}
+
+.project-heading {
+    grid-column: span 4;
+    text-align:center;
+}
+.project-item {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    border: solid #747474 3px;
+    border-radius: 2em;
+    background-color: lightcyan;
+    
+}
+.project-item-name {
+    margin-bottom: 15px;
+}
+
+.project-item-image {
+    height: 150px;
+}
+
+.contact-me-container{
+    margin: 50px;
+    text-align: center;
+}
+.project-item-description {
+    text-align: left;
+    width: 75%
+}
+
+.footer-container {
+    text-align: center;
+    padding: 30px 0 10px 0;
+}
