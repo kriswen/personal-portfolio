@@ -112,7 +112,6 @@ hr {
 
 
 .grid-item {
-
 }
 
 
@@ -143,6 +142,8 @@ hr {
     border: solid #747474 3px;
     border-radius: 2em;
     background-color: lightcyan;
+    width: 100%;
+    min-height: 300px;
     
 }
 .project-item-name {
