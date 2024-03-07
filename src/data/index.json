@@ -1,0 +1,102 @@
+{
+  "portfolio": [
+    {
+      "id": "1",
+      "src": "./img/projects/project-daily-cat.gif",
+      "title": "Daily Cat",
+      "description": "Display random cat image in jpg or gif using public API.",
+      "link": "View in Github",
+      "url": "https://github.com/kriswen/cat-image-project"
+    },
+    {
+      "id": "5",
+      "src": "./img/projects/project-todo-list.png",
+      "title": "Todo List App",
+      "description": "Full stack to-do list web app, using EJS, Express.js, Node.js, and MongoDB",
+      "link": "View in Github",
+      "url": "https://github.com/kriswen/todolist-2"
+    },
+    {
+      "id": "2",
+      "src": "./img/projects/project-travel-site.png",
+      "title": "Travel Site",
+      "description": "Travel website (frontend) made of HTML, CSS, and Javascript. Also use technologies and packages like PostCSS, Webpack, Node.js, NPM, and Netify.",
+      "link": "View in Github",
+      "url": "https://github.com/kriswen/travel-site"
+    },
+    {
+      "id": "3",
+      "src": "./img/projects/project-tindog.jpeg",
+      "title": "Tingdog",
+      "description": "Dog dating website (frontned) made of HTML and CSS.",
+      "link": "View in Github",
+      "url": ""
+    },
+    {
+      "id": "4",
+      "src": "./img/projects/project-resolvebio.gif",
+      "title": "Resolve Biosciennces",
+      "description": "Customized Wordpress webpages and functionalities.",
+      "link": "View the site",
+      "url": "https://resolvebiosciences.com/"
+    },
+    {
+      "id": "6",
+      "src": "./img/projects/project-siig-inc.gif",
+      "title": "SIIG, Inc",
+      "description": "Customized Magento 2 website with integration with various systems, with original ecommerce data migrated from legacy Magento 1.",
+      "link": "View the site",
+      "url": "https://www.siig.com/"
+    },
+    {
+      "id": "7",
+      "src": "./img/projects/project-shopify.gif",
+      "title": "Crystal Lighting Palace",
+      "description": "Customized Shopify e-commerce site with integration with multichannel ecommerce management system.",
+      "link": "View the site",
+      "url": "https://www.crystallightingpalace.com"
+    },
+    {
+      "id": "8",
+      "src": "./img/projects/placeholder-image.png",
+      "title": "Placeholder",
+      "description": "......",
+      "link": "View in Github",
+      "url": ""
+    },
+    {
+      "id": "9",
+      "src": "./img/projects/placeholder-image.png",
+      "title": "Placeholder",
+      "description": "......",
+      "link": "View in Github",
+      "url": ""
+    }
+  ],
+  "skills": [
+    {
+      "id": "1",
+      "src": "./img/product-chain-1.png",
+      "title": "Frontend",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipicing elit. suspendisse varius eim in eros elementum tristique"
+    },
+    {
+      "id": "2",
+      "src": "./img/tag-1.png",
+      "title": "Backend",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipicing elit. suspendisse varius eim in eros elementum tristique"
+    },
+    {
+      "id": "3",
+      "src": "./img/feather-pen-2.png",
+      "title": "SEO",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipicing elit. suspendisse varius eim in eros elementum tristique"
+    },
+    {
+      "id": "4",
+      "src": "./img/feather-pen-1.png",
+      "title": "UI & UX design",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipicing elit. suspendisse varius eim in eros elementum tristique"
+    }
+  ]
+}
