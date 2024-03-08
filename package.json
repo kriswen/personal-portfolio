@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "kriswen.github.io/personal-portfolio/",
+  "homepage": "https://kriswen.github.io/personal-portfolio/",
   "private": true,
   "engines": {
     "node": ">=12.x"
