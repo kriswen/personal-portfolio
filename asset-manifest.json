@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.dc123f80.css",
-    "main.js": "/personal-portfolio/static/js/main.75b0d13c.js",
-    "index.html": "/personal-portfolio/index.html",
-    "main.dc123f80.css.map": "/personal-portfolio/static/css/main.dc123f80.css.map",
-    "main.75b0d13c.js.map": "/personal-portfolio/static/js/main.75b0d13c.js.map"
+    "main.css": "/kriswen.github.io/personal-portfolio/static/css/main.817d8b94.css",
+    "main.js": "/kriswen.github.io/personal-portfolio/static/js/main.2aae3b93.js",
+    "index.html": "/kriswen.github.io/personal-portfolio/index.html",
+    "main.817d8b94.css.map": "/kriswen.github.io/personal-portfolio/static/css/main.817d8b94.css.map",
+    "main.2aae3b93.js.map": "/kriswen.github.io/personal-portfolio/static/js/main.2aae3b93.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc123f80.css",
-    "static/js/main.75b0d13c.js"
+    "static/css/main.817d8b94.css",
+    "static/js/main.2aae3b93.js"
   ]
 }
