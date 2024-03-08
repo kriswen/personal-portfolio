@@ -12,7 +12,7 @@ export default function MyPortfolio() {
           <p className="sub--title">Projects Summary</p>
           <h2 className="section--heading">My Portfolio</h2>
         </div>
-        <div>
+        <div className="porfolio--container">
           <button
             onClick={() => handleClick("https://www.github.com/kriswen")}
             className="btn btn-github"

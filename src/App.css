@@ -618,7 +618,7 @@ h3 {
   .skills--section--container,
   .about--section,
   .portfolio--section--container,
-  .portfolio--container-box,
+  .portfolio--container--box,
   .footer--link--container,
   .footer--items > ul,
   .footer--content--container {
@@ -634,10 +634,10 @@ h3 {
   .hero--section--content--box {
     align-items: center;
   }
-  .portfolio--container-box {
+  .portfolio--container--box {
     gap: 30px;
   }
-  .skills--section,
+  .portfolio--container--box .skills--section,
   .testimonial--section,
   .contact--section,
   .footer--container {
