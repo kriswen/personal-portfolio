@@ -9,7 +9,15 @@
       "url": "https://github.com/kriswen/cat-image-project"
     },
     {
-      "id": "5",
+      "id": "2",
+      "src": "./img/projects/project-weather-api.png",
+      "title": "Weather search",
+      "description": "Simple weather search app using EJS, Express.js rendering result from Openweather API",
+      "link": "View in Github",
+      "url": "https://github.com/kriswen/weather-api-project"
+    },
+    {
+      "id": "3",
       "src": "./img/projects/project-todo-list.png",
       "title": "Todo List App",
       "description": "Full stack to-do list web app, using EJS, Express.js, Node.js, and MongoDB",
@@ -17,15 +25,7 @@
       "url": "https://github.com/kriswen/todolist-2"
     },
     {
-      "id": "2",
-      "src": "./img/projects/project-travel-site.png",
-      "title": "Travel Site",
-      "description": "Travel website (frontend) made of HTML, CSS, and Javascript. Also use technologies and packages like PostCSS, Webpack, Node.js, NPM, and Netify.",
-      "link": "View in Github",
-      "url": "https://github.com/kriswen/travel-site"
-    },
-    {
-      "id": "3",
+      "id": "4",
       "src": "./img/projects/project-tindog.jpeg",
       "title": "Tingdog",
       "description": "Dog dating website (frontned) made of HTML and CSS.",
@@ -33,7 +33,15 @@
       "url": ""
     },
     {
-      "id": "4",
+      "id": "5",
+      "src": "./img/projects/project-travel-site.png",
+      "title": "Travel Site",
+      "description": "Travel website (frontend) made of HTML, CSS, and Javascript. Also use technologies and packages like PostCSS, Webpack, Node.js, NPM, and Netify.",
+      "link": "View in Github",
+      "url": "https://github.com/kriswen/travel-site"
+    },
+    {
+      "id": "6",
       "src": "./img/projects/project-resolvebio.gif",
       "title": "Resolve Biosciennces",
       "description": "Customized Wordpress webpages and functionalities.",
@@ -41,7 +49,7 @@
       "url": "https://resolvebiosciences.com/"
     },
     {
-      "id": "6",
+      "id": "7",
       "src": "./img/projects/project-siig-inc.gif",
       "title": "SIIG, Inc",
       "description": "Customized Magento 2 website with integration with various systems, with original ecommerce data migrated from legacy Magento 1.",
@@ -49,7 +57,7 @@
       "url": "https://www.siig.com/"
     },
     {
-      "id": "7",
+      "id": "8",
       "src": "./img/projects/project-shopify.gif",
       "title": "Crystal Lighting Palace",
       "description": "Customized Shopify e-commerce site with integration with multichannel ecommerce management system.",
@@ -57,17 +65,9 @@
       "url": "https://www.crystallightingpalace.com"
     },
     {
-      "id": "8",
-      "src": "./img/projects/placeholder-image.png",
-      "title": "Placeholder",
-      "description": "......",
-      "link": "View in Github",
-      "url": ""
-    },
-    {
       "id": "9",
-      "src": "./img/projects/placeholder-image.png",
-      "title": "Placeholder",
+      "src": "./img/projects/project-coming-soon.jpg",
+      "title": "Coming Soon",
       "description": "......",
       "link": "View in Github",
       "url": ""

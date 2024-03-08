@@ -421,9 +421,11 @@ h3 {
 
 .portfolio--section--img > img {
   width: 100%;
+  object-fit: cover;
 }
 
 .portfolio--section--card {
+  height: 650px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -431,7 +433,7 @@ h3 {
   flex: 1 0 0;
   background: #fff;
   box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+  //cursor: pointer;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -533,6 +535,7 @@ h3 {
 }
 .footer--items ul > li > a {
   text-decoration: none;
+  cursor: pointer;
 }
 .footer--social--icon > ul {
   list-style: none;
@@ -621,6 +624,9 @@ h3 {
   .footer--content--container {
     display: flex;
     flex-direction: column;
+  }
+  .portfolio--section--card {
+    width: 100%;
   }
   .skills--section,
   .portfolio--container,

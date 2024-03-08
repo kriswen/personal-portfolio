@@ -69,7 +69,7 @@ export default function HeroSection() {
         <img
           className="image-rounded-edges"
           height="500"
-          src="./img/hero_img.png"
+          src="./img/hero-background-814x576.jpg"
           alt="Hero Section"
         />
       </div>

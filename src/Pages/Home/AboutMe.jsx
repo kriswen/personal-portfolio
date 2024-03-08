@@ -4,7 +4,7 @@ export default function AboutMe() {
       <div className="about--section--img">
         <img
           className="image-rounded-edges"
-          src="./img/about-me.png"
+          src="./img/hero-img.png"
           alt="About me"
         />
       </div>
