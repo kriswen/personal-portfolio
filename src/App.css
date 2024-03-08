@@ -425,7 +425,7 @@ h3 {
 }
 
 .portfolio--section--card {
-  height: 500px;
+  height: 620px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
