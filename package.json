@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://kriswen.github.io/personal-portfolio/",
   "private": true,
   "engines": {
     "node": ">=12.x"
@@ -33,6 +34,5 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
-  },
-  "homepage": ""
+  }
 }

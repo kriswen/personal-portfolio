@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       {/*ensure nav routing behavior*/}
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div>
           <Navbar />
           <Routes>
