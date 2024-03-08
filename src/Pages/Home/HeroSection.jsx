@@ -37,7 +37,7 @@ export default function HeroSection() {
                 fill="currentColor"
               ></path>
             </svg>
-            Connect with Me
+            Let's Connect
           </button>
           <button
             className="btn btn-primary btn-download"
@@ -61,7 +61,7 @@ export default function HeroSection() {
                 fill="currentColor"
               ></path>
             </svg>
-            Download my Resume
+            Download Resume
           </button>
         </div>
       </div>
