@@ -31,7 +31,7 @@ To deploy this project to GitHub Page
     "deploy" : "gh-pages -d build",
 
   3. Add a homepage property to package.json
-    "homepage": "kriswen.github.io/personal-portfolio/",
+    "homepage": "https://kriswen.github.io/personal-portfolio/",
 
   4. Push to github repository
     $  npm run deploy -- -m "Deploy React app to GitHub Pages"
