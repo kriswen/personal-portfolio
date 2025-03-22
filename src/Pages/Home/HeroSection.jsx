@@ -21,7 +21,7 @@ export default function HeroSection() {
         <div className="hero--section--buttons">
           <button
             className="btn btn-primary btn-linkedIn"
-            onClick={() => handleClick("https://www.linkedin.com/in/kris-wen-37408633a")}
+            onClick={() => handleClick("https://www.linkedin.com/in/kriswen")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
