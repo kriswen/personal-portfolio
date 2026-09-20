@@ -1,102 +1,109 @@
 {
   "portfolio": [
     {
-      "id": "1",
-      "src": "./img/projects/project-daily-cat.gif",
-      "title": "Daily Cat",
-      "description": "Display random cat image in jpg or gif using public API.",
-      "link": "View in Github",
-      "url": "https://github.com/kriswen/cat-image-project"
+      "id": "fuho",
+      "eyebrow": "Manufacturing systems",
+      "title": "FUHO Operations Hub",
+      "description": "A secure internal operations platform that turns ERPNext, purchasing, inventory, production, email, and SOP knowledge into auditable workflows.",
+      "outcome": "From operational signal to human-approved action",
+      "technologies": ["Cloudflare Workers", "ERPNext", "D1", "RAG"],
+      "url": "",
+      "link": "Private production system"
     },
     {
-      "id": "2",
-      "src": "./img/projects/project-weather-api.png",
-      "title": "Weather search",
-      "description": "Simple weather search app using EJS, Express.js rendering result from Openweather API",
-      "link": "View in Github",
-      "url": "https://github.com/kriswen/weather-api-project"
+      "id": "flights",
+      "eyebrow": "AI + live data",
+      "title": "Award Flight Finder",
+      "description": "A conversational award-flight search product and MCP server that connects Gemini to live seats.aero availability across 20+ loyalty programs.",
+      "outcome": "Natural-language search over structured travel data",
+      "technologies": ["TypeScript", "MCP", "Gemini", "Node.js"],
+      "url": "https://github.com/kriswen/seats-aero-mcp",
+      "link": "View source"
     },
     {
-      "id": "3",
-      "src": "./img/projects/project-todo-list.png",
-      "title": "Todo List App",
-      "description": "Full stack to-do list web app, using EJS, Express.js, Node.js, and MongoDB",
-      "link": "View in Github",
-      "url": "https://github.com/kriswen/todolist-2"
+      "id": "packing",
+      "eyebrow": "Industrial optimization",
+      "title": "PackOptimizer",
+      "description": "A bilingual, collision-aware container fitment tool with automatic packing, manual drag-and-drop placement, unit conversion, and print-ready plans.",
+      "outcome": "Makes container-loading decisions visual and repeatable",
+      "technologies": ["React", "TypeScript", "Zustand", "Vite"],
+      "url": "https://github.com/kriswen/container-wood-case-calculator",
+      "link": "View source"
     },
     {
-      "id": "4",
-      "src": "./img/projects/project-tindog.jpeg",
-      "title": "Tingdog",
-      "description": "Dog dating website (frontned) made of HTML and CSS.",
-      "link": "View in Github",
-      "url": ""
-    },
-    {
-      "id": "5",
-      "src": "./img/projects/project-travel-site.png",
-      "title": "Travel Site",
-      "description": "Travel website (frontend) made of HTML, CSS, and Javascript. Also use technologies and packages like PostCSS, Webpack, Node.js, NPM, and Netify.",
-      "link": "View in Github",
-      "url": "https://github.com/kriswen/travel-site"
-    },
-    {
-      "id": "6",
-      "src": "./img/projects/project-resolvebio.gif",
-      "title": "Resolve Biosciennces",
-      "description": "Customized Wordpress webpages and functionalities.",
-      "link": "View the site",
-      "url": "https://resolvebiosciences.com/"
-    },
-    {
-      "id": "7",
-      "src": "./img/projects/project-siig-inc.gif",
-      "title": "SIIG, Inc",
-      "description": "Customized Magento 2 website with integration with various systems, with original ecommerce data migrated from legacy Magento 1.",
-      "link": "View the site",
-      "url": "https://www.siig.com/"
-    },
-    {
-      "id": "8",
-      "src": "./img/projects/project-shopify.gif",
-      "title": "Crystal Lighting Palace",
-      "description": "Customized Shopify e-commerce site with integration with multichannel ecommerce management system.",
-      "link": "View the site",
-      "url": ""
-    },
-    {
-      "id": "9",
-      "src": "./img/projects/project-coming-soon.jpg",
-      "title": "Coming Soon",
-      "description": "......",
-      "link": "View in Github",
-      "url": ""
+      "id": "heartbeat",
+      "eyebrow": "Product engineering",
+      "title": "Heartbeat Quest",
+      "description": "A mobile-first invitation builder with a game-like recipient flow, shareable tickets, private management links, and cross-device persistence.",
+      "outcome": "Full product loop from creation to acceptance",
+      "technologies": ["React", "TypeScript", "Workers", "D1"],
+      "url": "https://github.com/kriswen/heartbeat-quest",
+      "liveUrl": "https://kriswen.github.io/heartbeat-quest/",
+      "link": "View source"
     }
   ],
-  "skills": [
+  "experience": [
     {
-      "id": "1",
-      "src": "./img/product-chain-1.png",
-      "title": "Frontend",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipicing elit. suspendisse varius eim in eros elementum tristique"
+      "company": "American Express",
+      "role": "Software Engineer — AdTech",
+      "period": "May 2024 — Present",
+      "summary": "Engineering privacy-safe enterprise marketing measurement and the automation that keeps global tag delivery reliable.",
+      "highlights": [
+        "Built a JavaScript gtag.js wrapper supporting 100% GDPR/CCPA compliance and ±2% impression parity globally.",
+        "Created an AI-assisted JSON validation skill that reduced manual review time by 40%."
+      ]
     },
     {
-      "id": "2",
-      "src": "./img/tag-1.png",
-      "title": "Backend",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipicing elit. suspendisse varius eim in eros elementum tristique"
+      "company": "Mancini's Sleepworld",
+      "role": "Technical Consultant / Website Manager",
+      "period": "Aug 2021 — May 2024",
+      "summary": "Led web delivery, quality, and marketing automation across customer-facing digital experiences.",
+      "highlights": [
+        "Increased promotional conversion by 25% and engagement by 30% with mobile-first landing pages.",
+        "Managed QA and feature delivery with four external developers and zero critical production bugs."
+      ]
     },
     {
-      "id": "3",
-      "src": "./img/feather-pen-2.png",
-      "title": "SEO",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipicing elit. suspendisse varius eim in eros elementum tristique"
+      "company": "Resolve Biosciences",
+      "role": "Web Developer",
+      "period": "Oct 2022 — May 2023",
+      "summary": "Improved performance, reliability, campaign execution, and interactive event experiences for a biotechnology website.",
+      "highlights": [
+        "Improved site load time by 25% and achieved 99.8% uptime through platform and hosting work.",
+        "Built an offline-capable React microsite that increased convention interaction by 40%."
+      ]
     },
     {
-      "id": "4",
-      "src": "./img/feather-pen-1.png",
-      "title": "UI & UX design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipicing elit. suspendisse varius eim in eros elementum tristique"
+      "company": "SIIG, Inc.",
+      "role": "E-commerce Platform Administrator",
+      "period": "Aug 2018 — Aug 2021",
+      "summary": "Automated product, inventory, and order data flows across e-commerce and internal systems.",
+      "highlights": [
+        "Reduced daily data processing time by 40% while bringing inventory discrepancies near zero.",
+        "Reclaimed 15 hours per week and improved catalog accuracy to 99% with Python and SQL automation."
+      ]
+    }
+  ],
+  "capabilities": [
+    {
+      "number": "01",
+      "title": "Applied AI & agents",
+      "description": "LLM agents, MCP, RAG, context engineering, tool integration, eval-driven testing, and human-review boundaries."
+    },
+    {
+      "number": "02",
+      "title": "Business systems",
+      "description": "ERP/MRP workflows, purchasing, inventory, product master data, production operations, and audit-ready process design."
+    },
+    {
+      "number": "03",
+      "title": "Product engineering",
+      "description": "JavaScript, TypeScript, Python, React, Node.js, APIs, responsive interfaces, and accessible interaction design."
+    },
+    {
+      "number": "04",
+      "title": "Reliable delivery",
+      "description": "Cloudflare Workers, D1, KV, CI/CD, GitHub Actions, Jenkins, security controls, testing, and production verification."
     }
   ]
 }

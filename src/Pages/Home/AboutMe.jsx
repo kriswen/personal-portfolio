@@ -1,38 +1,21 @@
+import data from "../../data/index.json"
+
 export default function AboutMe() {
   return (
-    <section className="about--section" id="AboutMe">
-      <div className="about--section--img">
-        <img
-          className="image-rounded-edges"
-          src="./img/hero-img.png"
-          alt="About me"
-        />
+    <section className="capabilities section" id="Capabilities">
+      <div className="section__intro">
+        <p className="eyebrow">How I work</p>
+        <h2>Engineering across the whole problem.</h2>
+        <p>I am most useful where software, operations, and people meet. I translate ambiguous workflows into dependable systems—and stay close enough to production to know whether they actually work.</p>
       </div>
-      <div className="hero--section--content--box about--section--box">
-        <div className="hero--section--content">
-          <p className="section--title">About</p>
-          <h1 className="skills--section--heading">About Me</h1>
-          <p className="hero--section--description">
-            Hey there! I'm all in on my journey to expand my coding expertise.
-            With some job experience in coding, I'm driven to dive deeper into
-            the world of software development. I'm a Tech-Driven Problem Solver
-            with a passion for technology. Tech has always fascinated me, and I
-            love the thrill of creating something new and exciting with code.
-            I'm constantly learning and keeping up with the latest trends in
-            software development because I believe the possibilities are
-            endless!
-          </p>
-          <p className="hero--section--description">
-            When I'm not coding away, you'll find me jet-setting to new
-            destinations or exploring hidden gems in my own backyard. Traveling
-            is my passion, and I'm always on the lookout for my next adventure.
-            And let's talk about food! I'm a total foodie and I live for trying
-            out new cuisines. Whether it's digging into street food in a
-            bustling market or enjoying a fancy dinner, I'm always down for a
-            culinary adventure. Let's connect and swap travel stories and foodie
-            recommendations!
-          </p>
-        </div>
+      <div className="capability-grid">
+        {data.capabilities.map((item) => (
+          <article className="capability-card" key={item.number}>
+            <span className="capability-card__number">{item.number}</span>
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
+          </article>
+        ))}
       </div>
     </section>
   )
