@@ -1,30 +1,110 @@
-import {useEffect, useState} from "react"
+import {useState, useEffect} from "react"
+import {Link} from "react-scroll"
 
-const links = [
-  ["Work", "#MyPortfolio"],
-  ["Capabilities", "#Capabilities"],
-  ["Experience", "#Experience"],
-]
-
-export default function Navbar() {
-  const [open, setOpen] = useState(false)
+function Navbar() {
+  const [navActive, setNavActive] = useState(false)
+  //open nav function
+  const toggleNav = () => {
+    setNavActive(!navActive)
+  }
+  //close nav function
+  const closeMenu = () => {
+    setNavActive(false)
+  }
 
   useEffect(() => {
-    const close = () => setOpen(false)
-    window.addEventListener("resize", close)
-    return () => window.removeEventListener("resize", close)
+    const handleResize = () => {
+      if (window.innerWidth <= 500) {
+        closeMenu
+      }
+    }
+
+    window.addEventListener("resize", handleResize)
+
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [])
+
+  useEffect(() => {
+    if (window.innerWidth <= 1200) {
+      closeMenu
+    }
   }, [])
 
   return (
-    <header className="site-header">
-      <a className="wordmark" href="#heroSection" aria-label="Kris Wen, home"><span>KW</span>Kris Wen</a>
-      <button className="menu-button" type="button" aria-expanded={open} aria-controls="site-nav" onClick={() => setOpen(!open)}>
-        <span></span><span></span><span></span><span className="sr-only">Toggle navigation</span>
-      </button>
-      <nav id="site-nav" className={open ? "site-nav site-nav--open" : "site-nav"} aria-label="Primary navigation">
-        {links.map(([label, href]) => <a href={href} key={href} onClick={() => setOpen(false)}>{label}</a>)}
-      </nav>
-      <a className="header-contact" href="#Contact">Let’s talk <span aria-hidden="true">↗</span></a>
-    </header>
+    <nav className={`navbar ${navActive ? "active" : ""}`}>
+      <div>
+        <img src="./img/logo.png" alt="Logo"></img>
+      </div>
+      <a
+        className={`nav__hamburger ${navActive ? "active" : ""}`}
+        onClick={toggleNav}
+      >
+        <span className="nav__hamburger__line"></span>
+        <span className="nav__hamburger__line"></span>
+        <span className="nav__hamburger__line"></span>
+      </a>
+      <div className={`navbar--items ${navActive ? "active" : ""}`}>
+        <ul>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="heroSection"
+              className="navbar--content"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="MyPortfolio"
+              className="navbar--content"
+            >
+              Portfolio
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="AboutMe"
+              className="navbar--content"
+            >
+              About Me
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <Link
+        onClick={closeMenu}
+        activeClass="navbar--active-content"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+        to="Contact"
+        className="btn btn-outline-primary"
+      >
+        Contact Me
+      </Link>
+    </nav>
   )
 }
+
+export default Navbar
