@@ -2,23 +2,25 @@ import data from "../../data/index.json"
 
 export default function MySkills() {
   return (
-    <section className="skills--section" id="mySkills">
-      <div className="portfolio--container">
-        <p className="section--title">My Skills</p>
-        <h2 className="skills--section--heading">My Expertise</h2>
-      </div>
-      <div className="skills--section--container">
-        {data?.skills?.map((item, index) => (
-          <div key={index} className="skills--section--card">
-            <div className="skills--section--img">
-              <img src={item.src} alt="product chain" />
-            </div>
-            <div className="skills--section--card--content">
-              <h3 className="skills--section--title">{item.title}</h3>
-              <p className="skills--section--description">{item.description}</p>
-            </div>
-          </div>
-        ))}
+    <section className="section section--muted" id="Expertise">
+      <div className="section-shell">
+        <div className="section-heading">
+          <p className="eyebrow">Expertise</p>
+          <h2>From ambiguous workflow to verified system.</h2>
+          <p>
+            I combine software engineering, enterprise integration, and applied AI
+            to deliver tools people can safely use in daily operations.
+          </p>
+        </div>
+        <div className="expertise-grid">
+          {data.skills.map((item) => (
+            <article key={item.id} className="expertise-card">
+              <span className="mono-label">{item.label}</span>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   )

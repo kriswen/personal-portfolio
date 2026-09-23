@@ -1,110 +1,78 @@
-import {useState, useEffect} from "react"
+import {useEffect, useState} from "react"
 import {Link} from "react-scroll"
 
-function Navbar() {
-  const [navActive, setNavActive] = useState(false)
-  //open nav function
-  const toggleNav = () => {
-    setNavActive(!navActive)
-  }
-  //close nav function
-  const closeMenu = () => {
-    setNavActive(false)
-  }
+const links = [
+  {label: "Expertise", to: "Expertise"},
+  {label: "Projects", to: "MyPortfolio"},
+  {label: "Experience", to: "Experience"},
+  {label: "About", to: "AboutMe"},
+]
+
+export default function Navbar() {
+  const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 500) {
-        closeMenu
-      }
+    const closeOnWideScreen = () => {
+      if (window.innerWidth > 900) setOpen(false)
     }
-
-    window.addEventListener("resize", handleResize)
-
-    return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  }, [])
-
-  useEffect(() => {
-    if (window.innerWidth <= 1200) {
-      closeMenu
-    }
+    window.addEventListener("resize", closeOnWideScreen)
+    return () => window.removeEventListener("resize", closeOnWideScreen)
   }, [])
 
   return (
-    <nav className={`navbar ${navActive ? "active" : ""}`}>
-      <div>
-        <img src="./img/logo.png" alt="Logo"></img>
-      </div>
-      <a
-        className={`nav__hamburger ${navActive ? "active" : ""}`}
-        onClick={toggleNav}
-      >
-        <span className="nav__hamburger__line"></span>
-        <span className="nav__hamburger__line"></span>
-        <span className="nav__hamburger__line"></span>
-      </a>
-      <div className={`navbar--items ${navActive ? "active" : ""}`}>
-        <ul>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="heroSection"
-              className="navbar--content"
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="MyPortfolio"
-              className="navbar--content"
-            >
-              Portfolio
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="AboutMe"
-              className="navbar--content"
-            >
-              About Me
-            </Link>
-          </li>
-        </ul>
-      </div>
-      <Link
-        onClick={closeMenu}
-        activeClass="navbar--active-content"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        to="Contact"
-        className="btn btn-outline-primary"
-      >
-        Contact Me
-      </Link>
-    </nav>
+    <header className="site-header">
+      <nav className="navbar section-shell" aria-label="Primary navigation">
+        <Link
+          className="brand"
+          to="heroSection"
+          smooth
+          offset={-72}
+          duration={400}
+          onClick={() => setOpen(false)}
+          aria-label="Kris Wen home"
+        >
+          KW<span>.</span>
+        </Link>
+        <button
+          className={`nav-toggle ${open ? "is-open" : ""}`}
+          type="button"
+          aria-expanded={open}
+          aria-controls="primary-menu"
+          aria-label={open ? "Close navigation" : "Open navigation"}
+          onClick={() => setOpen((current) => !current)}
+        >
+          <span /><span />
+        </button>
+        <div id="primary-menu" className={`nav-menu ${open ? "is-open" : ""}`}>
+          <ul>
+            {links.map((link) => (
+              <li key={link.to}>
+                <Link
+                  to={link.to}
+                  spy
+                  smooth
+                  offset={-72}
+                  duration={400}
+                  activeClass="is-active"
+                  onClick={() => setOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Link
+            className="button button--small button--primary"
+            to="Contact"
+            smooth
+            offset={-72}
+            duration={400}
+            onClick={() => setOpen(false)}
+          >
+            Contact
+          </Link>
+        </div>
+      </nav>
+    </header>
   )
 }
-
-export default Navbar

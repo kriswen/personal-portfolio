@@ -1,77 +1,60 @@
-export default function HeroSection() {
-  function handleClick(url) {
-    window.open(url, "_blank")
-  }
+import data from "../../data/index.json"
 
+export default function HeroSection() {
   return (
-    <section id="heroSection" className="hero--section">
-      <div className="hero--section--content--box">
-        <div className="hero--section--content">
-          <p className="section--title">Hello, I'm Kris Wen</p>
-          <h1 className="hero--section--title">
-            <span className="hero--section--title--color">Full Stack</span>{" "}
-            <br />
-            Developer
-          </h1>
-          <p className="hero--section--description">
-            Full-stack developer that transforming ideas into captivating
-            digital realities.
-          </p>
+    <section id="heroSection" className="hero section-shell">
+      <div className="hero__content">
+        <p className="eyebrow">{data.profile.eyebrow}</p>
+        <h1>
+          Building AI-enabled systems that work in the <span>real world.</span>
+        </h1>
+        <p className="hero__lede">{data.profile.summary}</p>
+        <div className="button-row">
+          <a className="button button--primary" href="#MyPortfolio">
+            View selected work
+          </a>
+          <a
+            className="button button--secondary"
+            href={data.profile.resumes[0].url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            AI Solutions Resume
+          </a>
         </div>
-        <div className="hero--section--buttons">
-          <button
-            className="btn btn-primary btn-linkedIn"
-            onClick={() => handleClick("https://www.linkedin.com/in/kriswen")}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 33 33"
-              fill="none"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                fill="currentColor"
-              ></path>
-            </svg>
-            Let's Connect
-          </button>
-          <button
-            className="btn btn-primary btn-download"
-            onClick={() =>
-              handleClick(
-                "https://drive.google.com/file/d/1yd4iLgmP74BwiSoFknIHL6pJxdQLWZfQ/"
-              )
-            }
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 33 33"
-              fill="none"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M12 13V4M7 14H5a1 1 0 0 0-1 1v4c0 .6.4 1 1 1h14c.6 0 1-.4 1-1v-4c0-.6-.4-1-1-1h-2m-1-5-4 5-4-5m9 8h0"
-                fill="currentColor"
-              ></path>
-            </svg>
-            Download Resume
-          </button>
+        <div className="hero__facts" aria-label="Career highlights">
+          <div>
+            <strong>Since 2014</strong>
+            <span>Software & systems experience</span>
+          </div>
+          <div>
+            <strong>Production-first</strong>
+            <span>Security, testing & verification</span>
+          </div>
+          <div>
+            <strong>Human-centered AI</strong>
+            <span>Grounded output with review boundaries</span>
+          </div>
         </div>
       </div>
-      <div className="hero--section--image">
-        <img
-          className="image-rounded-edges"
-          height="500"
-          src="./img/hero-background-814x576.jpg"
-          alt="Hero Section"
-        />
+
+      <div className="hero__system" aria-label="How I deliver operational AI systems">
+        <div className="system-card">
+          <div className="system-card__header">
+            <span className="status-dot" aria-hidden="true" />
+            <span>operational-system.ts</span>
+            <span className="status-pill">verified</span>
+          </div>
+          <div className="system-flow" role="list">
+            <div role="listitem"><span>01</span><strong>Discover</strong><small>Workflow & constraints</small></div>
+            <div role="listitem"><span>02</span><strong>Integrate</strong><small>AI, APIs & source data</small></div>
+            <div role="listitem"><span>03</span><strong>Guard</strong><small>Approval & failure safety</small></div>
+            <div role="listitem"><span>04</span><strong>Verify</strong><small>Tests & production evidence</small></div>
+          </div>
+          <div className="system-card__footer">
+            <code>signal → decision → action → evidence</code>
+          </div>
+        </div>
       </div>
     </section>
   )

@@ -1,102 +1,209 @@
 {
+  "profile": {
+    "name": "Kris Wen",
+    "role": "AI Solutions Engineer",
+    "eyebrow": "Applied AI · Enterprise Integration · Workflow Automation",
+    "summary": "I turn ambiguous operational requirements into secure, testable production systems—connecting AI, enterprise APIs, human review, and reliable full-stack workflows.",
+    "location": "San Francisco Bay Area",
+    "email": "kriswen99@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/kriswen/",
+    "github": "https://github.com/kriswen",
+    "resumes": [
+      {
+        "label": "AI Solutions Resume",
+        "url": "https://drive.google.com/file/d/1hvGR8tR1qqVjFaxVSWH4yRynv4TkBHXU/view?usp=sharing"
+      },
+      {
+        "label": "AdTech / MarTech Resume",
+        "url": "https://drive.google.com/file/d/10u3TKipZbsC-pBlxpIB6CN2vd3eTV0Oq/view?usp=sharing"
+      }
+    ]
+  },
   "portfolio": [
     {
-      "id": "1",
-      "src": "./img/projects/project-daily-cat.gif",
+      "id": "fuho-operations",
+      "year": 2026,
+      "title": "FUHO Manufacturing Operations Hub",
+      "kind": "Independent consultant · Production",
+      "description": "A secure internal platform that translates manufacturing operations into auditable ERP, procurement, sales, inventory, and AI-assisted workflows.",
+      "outcome": "Production system actively used by FUHO employees",
+      "technologies": ["Cloudflare Workers", "ERPNext", "D1", "RAG"],
+      "availability": "Private production system",
+      "accent": "blue"
+    },
+    {
+      "id": "award-flight-finder",
+      "year": 2026,
+      "title": "Award Flight Finder",
+      "kind": "Independent project · Applied AI",
+      "description": "A conversational flight-search product and MCP server that connects Gemini Flash to live seats.aero availability across more than 20 loyalty programs.",
+      "outcome": "Natural-language search backed by structured flight tools",
+      "technologies": ["TypeScript", "Gemini", "MCP", "REST APIs"],
+      "githubRepo": "kriswen/award-flight-finder",
+      "accent": "violet"
+    },
+    {
+      "id": "packoptimizer",
+      "year": 2026,
+      "title": "PackOptimizer",
+      "kind": "FUHO internal tool · Product engineering",
+      "description": "A bilingual, collision-aware container fitment tool with automatic packing, manual drag-and-rearrange controls, unit conversion, and print-ready plans.",
+      "outcome": "Turns equipment dimensions into usable packing layouts",
+      "technologies": ["React", "TypeScript", "Zustand", "Vite"],
+      "githubRepo": "kriswen/container-wood-case-calculator",
+      "accent": "orange"
+    },
+    {
+      "id": "heartbeat-quest",
+      "year": 2026,
+      "title": "Heartbeat Quest",
+      "kind": "Independent project · Full-stack product",
+      "description": "A mobile-first invitation and digital-ticket experience with private management links, explicit acceptance, and fail-closed cloud publishing.",
+      "outcome": "Verified with 31 unit tests and 16 viewport tests",
+      "technologies": ["React", "TypeScript", "Cloudflare Workers", "D1"],
+      "githubRepo": "kriswen/heartbeat-quest",
+      "liveUrl": "https://kriswen.github.io/heartbeat-quest/",
+      "accent": "pink"
+    },
+    {
+      "id": "line-reminder",
+      "year": 2026,
+      "title": "LINE Reminder & Health Bot",
+      "kind": "Independent project · Serverless migration",
+      "description": "A LINE reminder and health-tracking bot migrated from Docker and Express to Cloudflare Workers, D1, Static Assets, and scheduled jobs.",
+      "outcome": "Webhook verification, retries, and lease recovery built in",
+      "technologies": ["JavaScript", "Cloudflare Workers", "D1", "HMAC"],
+      "githubRepo": "kriswen/LINE-app",
+      "accent": "green"
+    }
+  ],
+  "earlierPortfolio": [
+    {
+      "id": "daily-cat",
       "title": "Daily Cat",
-      "description": "Display random cat image in jpg or gif using public API.",
-      "link": "View in Github",
+      "description": "A small API project that serves random cat images and GIFs.",
+      "technologies": "JavaScript · Public API",
+      "thumbnail": "img/projects/project-daily-cat.gif",
       "url": "https://github.com/kriswen/cat-image-project"
     },
     {
-      "id": "2",
-      "src": "./img/projects/project-weather-api.png",
-      "title": "Weather search",
-      "description": "Simple weather search app using EJS, Express.js rendering result from Openweather API",
-      "link": "View in Github",
+      "id": "weather-search",
+      "title": "Weather Search",
+      "description": "A server-rendered weather search using live OpenWeather data.",
+      "technologies": "EJS · Express.js · OpenWeather API",
+      "thumbnail": "img/projects/project-weather-api.png",
       "url": "https://github.com/kriswen/weather-api-project"
     },
     {
-      "id": "3",
-      "src": "./img/projects/project-todo-list.png",
+      "id": "todo-list",
       "title": "Todo List App",
-      "description": "Full stack to-do list web app, using EJS, Express.js, Node.js, and MongoDB",
-      "link": "View in Github",
+      "description": "A full-stack task manager with persistent MongoDB storage.",
+      "technologies": "Node.js · Express.js · MongoDB",
+      "thumbnail": "img/projects/project-todo-list.png",
       "url": "https://github.com/kriswen/todolist-2"
     },
     {
-      "id": "4",
-      "src": "./img/projects/project-tindog.jpeg",
-      "title": "Tingdog",
-      "description": "Dog dating website (frontned) made of HTML and CSS.",
-      "link": "View in Github",
+      "id": "tindog",
+      "title": "Tindog",
+      "description": "A responsive front-end landing-page exercise for a fictional dog-matching product.",
+      "technologies": "HTML · CSS · Responsive design",
+      "thumbnail": "img/projects/project-tindog.jpeg",
       "url": ""
     },
     {
-      "id": "5",
-      "src": "./img/projects/project-travel-site.png",
+      "id": "travel-site",
       "title": "Travel Site",
-      "description": "Travel website (frontend) made of HTML, CSS, and Javascript. Also use technologies and packages like PostCSS, Webpack, Node.js, NPM, and Netify.",
-      "link": "View in Github",
+      "description": "A responsive travel website built with a modern front-end asset pipeline.",
+      "technologies": "JavaScript · PostCSS · Webpack",
+      "thumbnail": "img/projects/project-travel-site.png",
       "url": "https://github.com/kriswen/travel-site"
     },
     {
-      "id": "6",
-      "src": "./img/projects/project-resolvebio.gif",
-      "title": "Resolve Biosciennces",
-      "description": "Customized Wordpress webpages and functionalities.",
-      "link": "View the site",
-      "url": "https://resolvebiosciences.com/"
+      "id": "resolve-biosciences",
+      "title": "Resolve Biosciences",
+      "description": "Corporate website implementation, custom WordPress features, and performance improvements.",
+      "technologies": "WordPress · JavaScript · Web performance",
+      "thumbnail": "img/projects/project-resolvebio.gif",
+      "url": ""
     },
     {
-      "id": "7",
-      "src": "./img/projects/project-siig-inc.gif",
-      "title": "SIIG, Inc",
-      "description": "Customized Magento 2 website with integration with various systems, with original ecommerce data migrated from legacy Magento 1.",
-      "link": "View the site",
-      "url": "https://www.siig.com/"
+      "id": "siig",
+      "title": "SIIG, Inc.",
+      "description": "Magento 2 migration, customization, integrations, and continuous e-commerce improvement.",
+      "technologies": "Magento 2 · APIs · eCommerce",
+      "thumbnail": "img/projects/project-siig-inc.gif",
+      "url": ""
     },
     {
-      "id": "8",
-      "src": "./img/projects/project-shopify.gif",
+      "id": "crystal-lighting",
       "title": "Crystal Lighting Palace",
-      "description": "Customized Shopify e-commerce site with integration with multichannel ecommerce management system.",
-      "link": "View the site",
+      "description": "A customized Shopify storefront integrated with multichannel e-commerce operations.",
+      "technologies": "Shopify · eCommerce integration",
+      "thumbnail": "img/projects/project-shopify.gif",
       "url": ""
+    }
+  ],
+  "experience": [
+    {
+      "company": "American Express",
+      "role": "Software Engineer, AdTech",
+      "period": "May 2024 — August 2026",
+      "summary": "Built privacy-safe marketing measurement, secure tag delivery, automated validation, and production deployment workflows.",
+      "proof": "Global impression parity within ±2% and 40% less manual tag-review time."
     },
     {
-      "id": "9",
-      "src": "./img/projects/project-coming-soon.jpg",
-      "title": "Coming Soon",
-      "description": "......",
-      "link": "View in Github",
-      "url": ""
+      "company": "Mancini's Sleepworld",
+      "role": "Technical Consultant / Website Manager",
+      "period": "August 2021 — May 2024",
+      "summary": "Led responsive web delivery, QA, marketing automation, and outsourced implementation across customer-facing experiences.",
+      "proof": "25% higher conversion and 30% higher engagement on promotional landing pages."
+    },
+    {
+      "company": "Resolve Biosciences",
+      "role": "Web Developer",
+      "period": "October 2022 — May 2023",
+      "summary": "Improved website performance, campaign systems, reliability, and an offline-capable interactive convention experience.",
+      "proof": "25% faster site loads and 40% more touchscreen interaction."
+    },
+    {
+      "company": "SIIG, Inc.",
+      "role": "MIS Specialist / eCommerce Platform Developer",
+      "period": "August 2018 — August 2021",
+      "summary": "Delivered Magento modernization, API integrations, reporting, ETL, and operational automation across two roles.",
+      "proof": "35% online-sales growth after the Magento 2 launch."
+    },
+    {
+      "company": "Worldwide Lighting Corp.",
+      "role": "IT Support & eCommerce Specialist",
+      "period": "August 2014 — August 2018",
+      "summary": "Supported business systems, e-commerce operations, websites, and process automation.",
+      "proof": "Contributed to 300% online-sales growth over six months."
     }
   ],
   "skills": [
     {
-      "id": "1",
-      "src": "./img/product-chain-1.png",
-      "title": "Frontend",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipicing elit. suspendisse varius eim in eros elementum tristique"
+      "id": "applied-ai",
+      "label": "01",
+      "title": "Applied AI systems",
+      "description": "LLM integration, source-grounded RAG, MCP, tool calling, context design, multi-agent orchestration, evaluation, and human-review boundaries."
     },
     {
-      "id": "2",
-      "src": "./img/tag-1.png",
-      "title": "Backend",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipicing elit. suspendisse varius eim in eros elementum tristique"
+      "id": "enterprise",
+      "label": "02",
+      "title": "Enterprise workflows",
+      "description": "ERPNext/Frappe, procurement, sales, inventory, approvals, Gmail and Google APIs, operational dashboards, and master-data migration."
     },
     {
-      "id": "3",
-      "src": "./img/feather-pen-2.png",
-      "title": "SEO",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipicing elit. suspendisse varius eim in eros elementum tristique"
+      "id": "product",
+      "label": "03",
+      "title": "Full-stack product delivery",
+      "description": "JavaScript, TypeScript, Python, React, Node.js, REST APIs, responsive interfaces, and AI-assisted engineering with owned review."
     },
     {
-      "id": "4",
-      "src": "./img/feather-pen-1.png",
-      "title": "UI & UX design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipicing elit. suspendisse varius eim in eros elementum tristique"
+      "id": "reliability",
+      "label": "04",
+      "title": "Reliability & delivery",
+      "description": "Cloudflare Workers, D1, KV, R2, Access, role-based authorization, idempotency, Playwright, CI/CD, and production verification."
     }
   ]
 }

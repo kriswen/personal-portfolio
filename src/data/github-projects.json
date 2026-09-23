@@ -1,0 +1,34 @@
+{
+  "kriswen/award-flight-finder": {
+    "repo": "kriswen/award-flight-finder",
+    "url": "https://github.com/kriswen/award-flight-finder",
+    "description": "AI-powered award flight finder using seats.aero + Gemini Flash",
+    "homepage": "",
+    "language": "TypeScript",
+    "pushedAt": "2026-09-21T23:09:31Z"
+  },
+  "kriswen/LINE-app": {
+    "repo": "kriswen/LINE-app",
+    "url": "https://github.com/kriswen/LINE-app",
+    "description": "line message notification reminder",
+    "homepage": "",
+    "language": "JavaScript",
+    "pushedAt": "2026-09-02T06:07:09Z"
+  },
+  "kriswen/heartbeat-quest": {
+    "repo": "kriswen/heartbeat-quest",
+    "url": "https://github.com/kriswen/heartbeat-quest",
+    "description": "心動副本 — a playful personalized invitation and digital ticket experience",
+    "homepage": "",
+    "language": "TypeScript",
+    "pushedAt": "2026-09-03T08:07:55Z"
+  },
+  "kriswen/container-wood-case-calculator": {
+    "repo": "kriswen/container-wood-case-calculator",
+    "url": "https://github.com/kriswen/container-wood-case-calculator",
+    "description": "",
+    "homepage": "",
+    "language": "TypeScript",
+    "pushedAt": "2026-04-05T12:00:13Z"
+  }
+}

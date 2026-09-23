@@ -16,6 +16,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "test": "react-scripts test",
+    "test:metadata": "node --test scripts/github-projects.test.cjs",
+    "prebuild": "node scripts/fetch-github-projects.cjs",
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
