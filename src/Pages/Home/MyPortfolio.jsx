@@ -16,8 +16,8 @@ export default function MyPortfolio() {
       <div className="section-shell">
         <div className="section-heading section-heading--split">
           <div>
-            <p className="eyebrow">Selected projects · 2026</p>
-            <h2>Operational products, not demo prompts.</h2>
+            <p className="eyebrow">Selected work</p>
+            <h2>Marketing results. Reliable business systems.</h2>
           </div>
           <a
             href={data.profile.github}
@@ -29,8 +29,19 @@ export default function MyPortfolio() {
           </a>
         </div>
 
-        <div className="project-grid">
-          {data.portfolio.map((project, index) => {
+        {data.portfolioGroups.map((group) => (
+          <section
+            key={group.id}
+            className="project-group"
+            data-project-group={group.id}
+            aria-labelledby={`project-group-${group.id}`}
+          >
+            <div className="project-group__heading">
+              <h3 id={`project-group-${group.id}`}>{group.title}</h3>
+              <p>{group.description}</p>
+            </div>
+            <div className="project-grid">
+          {data.portfolio.filter((project) => project.group === group.id).map((project, index) => {
             const metadata = project.githubRepo
               ? githubMetadata[project.githubRepo]
               : null
@@ -50,7 +61,7 @@ export default function MyPortfolio() {
                 </div>
                 <div className="project-card__body">
                   <p className="project-card__kind">{project.kind}</p>
-                  <h3>{project.title}</h3>
+                  <h4>{project.title}</h4>
                   <p className="project-card__description">{project.description}</p>
                   <p className="project-card__outcome">{project.outcome}</p>
                   <ul className="tag-list" aria-label={`${project.title} technologies`}>
@@ -80,7 +91,9 @@ export default function MyPortfolio() {
               </article>
             )
           })}
-        </div>
+            </div>
+          </section>
+        ))}
         <p className="metadata-note">
           Project selection and case-study copy are curated. Public repository
           language and update dates are refreshed from GitHub during each build,

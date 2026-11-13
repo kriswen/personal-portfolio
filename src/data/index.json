@@ -1,27 +1,81 @@
 {
   "profile": {
     "name": "Kris Wen",
-    "role": "AI Solutions Engineer",
-    "eyebrow": "Applied AI · Enterprise Integration · Workflow Automation",
-    "summary": "I turn ambiguous operational requirements into secure, testable production systems—connecting AI, enterprise APIs, human review, and reliable full-stack workflows.",
+    "role": "Marketing Technology & Automation Engineer",
+    "headline": "Building reliable marketing and business automation.",
+    "eyebrow": "Marketing Technology · Business Systems · Applied AI",
+    "summary": "I connect marketing platforms, enterprise systems, and AI-assisted workflows to reduce manual work and improve measurable outcomes.",
     "location": "San Francisco Bay Area",
     "email": "kriswen99@gmail.com",
     "linkedin": "https://www.linkedin.com/in/kriswen/",
     "github": "https://github.com/kriswen",
     "resumes": [
       {
+        "label": "Marketing Technology & Automation Resume",
+        "url": "https://drive.google.com/file/d/1TwilJ8wcc8jjRpO9CEurCFgxf1rhM1Wa/view?usp=drive_link"
+      },
+      {
         "label": "AI Solutions Resume",
         "url": "https://drive.google.com/file/d/1hvGR8tR1qqVjFaxVSWH4yRynv4TkBHXU/view?usp=sharing"
       },
       {
-        "label": "AdTech / MarTech Resume",
+        "label": "Software Engineer Resume",
         "url": "https://drive.google.com/file/d/10u3TKipZbsC-pBlxpIB6CN2vd3eTV0Oq/view?usp=sharing"
       }
     ]
   },
+  "portfolioGroups": [
+    {
+      "id": "marketing",
+      "title": "Marketing technology",
+      "description": "Tracking, campaign workflows, and customer-facing experiences with measurable results."
+    },
+    {
+      "id": "ai-business",
+      "title": "AI and business systems",
+      "description": "Production tools, grounded knowledge, and API integrations with clear review and recovery controls."
+    }
+  ],
   "portfolio": [
     {
+      "id": "amex-marketing-measurement",
+      "group": "marketing",
+      "year": 2026,
+      "title": "American Express tracking & review automation",
+      "kind": "Professional experience · AdTech",
+      "description": "Built a JavaScript gtag.js wrapper replacing legacy third-party pixels, plus a reusable AI-assisted JSON-tag review skill with human validation and approval before import.",
+      "outcome": "Global impression parity within ±2% and 40% less manual tag-review time",
+      "technologies": ["JavaScript", "gtag.js", "AI-assisted review", "Jenkins"],
+      "availability": "Professional work · no public source code",
+      "accent": "blue"
+    },
+    {
+      "id": "mancini-marketing-automation",
+      "group": "marketing",
+      "year": 2024,
+      "title": "Mancini's conversion & marketing automation",
+      "kind": "Professional experience · MarTech",
+      "description": "Developed responsive promotional landing pages and Salesforce Marketing Cloud journeys. Configured a Magento plug-in for Meta Conversions API tracking and coordinated code review and QA.",
+      "outcome": "25% higher landing-page conversion and 30% higher engagement",
+      "technologies": ["JavaScript", "Salesforce Marketing Cloud", "Magento", "Conversion tracking"],
+      "availability": "Professional work · archived experience",
+      "accent": "violet"
+    },
+    {
+      "id": "resolve-campaigns",
+      "group": "marketing",
+      "year": 2023,
+      "title": "Resolve website & campaign systems",
+      "kind": "Professional experience · Web & campaigns",
+      "description": "Implemented and maintained the corporate WordPress site, built responsive Marketo templates, and improved on-page and technical SEO.",
+      "outcome": "25% faster site loads; email click-through rates increased by 15%",
+      "technologies": ["WordPress", "Marketo", "JavaScript", "Technical SEO"],
+      "availability": "Original website snapshot in the archive below",
+      "accent": "green"
+    },
+    {
       "id": "fuho-operations",
+      "group": "ai-business",
       "year": 2026,
       "title": "FUHO Manufacturing Operations Hub",
       "kind": "Independent consultant · Production",
@@ -32,7 +86,20 @@
       "accent": "blue"
     },
     {
+      "id": "controlled-knowledge",
+      "group": "ai-business",
+      "year": 2026,
+      "title": "Controlled AI knowledge workflows",
+      "kind": "Independent project · Grounded knowledge",
+      "description": "Built a company-shareable knowledge repository from allowlisted authoritative notes, with source validation, secret scanning, and daily synchronization that halts on unexpected changes.",
+      "outcome": "Controlled SOP and product knowledge shared by users and AI assistants",
+      "technologies": ["Source validation", "Git", "SOPs", "Scheduled workflows"],
+      "availability": "Private knowledge repository",
+      "accent": "green"
+    },
+    {
       "id": "award-flight-finder",
+      "group": "ai-business",
       "year": 2026,
       "title": "Award Flight Finder",
       "kind": "Independent project · Applied AI",
@@ -44,17 +111,19 @@
     },
     {
       "id": "packoptimizer",
+      "group": "ai-business",
       "year": 2026,
       "title": "PackOptimizer",
       "kind": "FUHO internal tool · Product engineering",
       "description": "A bilingual, collision-aware container fitment tool with automatic packing, manual drag-and-rearrange controls, unit conversion, and print-ready plans.",
       "outcome": "Turns equipment dimensions into usable packing layouts",
-      "technologies": ["React", "TypeScript", "Zustand", "Vite"],
+      "technologies": ["React", "TypeScript", "Vite"],
       "githubRepo": "kriswen/container-wood-case-calculator",
       "accent": "orange"
     },
     {
       "id": "heartbeat-quest",
+      "group": "ai-business",
       "year": 2026,
       "title": "Heartbeat Quest",
       "kind": "Independent project · Full-stack product",
@@ -67,6 +136,7 @@
     },
     {
       "id": "line-reminder",
+      "group": "ai-business",
       "year": 2026,
       "title": "LINE Reminder & Health Bot",
       "kind": "Independent project · Serverless migration",
@@ -145,10 +215,17 @@
   ],
   "experience": [
     {
+      "company": "FUHO",
+      "role": "AI Solutions Engineer — Independent Consultant",
+      "period": "August 2026 — Present",
+      "summary": "Paid independent consulting engagement building production ERPNext integrations, operational tools, and source-grounded AI assistants. Own requirements, AI-assisted implementation, review, testing, and release verification.",
+      "proof": "Actively used by employees; imported and verified 91 suppliers and 428 supplier items."
+    },
+    {
       "company": "American Express",
       "role": "Software Engineer, AdTech",
       "period": "May 2024 — August 2026",
-      "summary": "Built privacy-safe marketing measurement, secure tag delivery, automated validation, and production deployment workflows.",
+      "summary": "Built marketing measurement and tag-delivery workflows that considered consent and regional requirements, with AI-assisted review, human validation, and production deployment checks.",
       "proof": "Global impression parity within ±2% and 40% less manual tag-review time."
     },
     {
@@ -182,22 +259,22 @@
   ],
   "skills": [
     {
-      "id": "applied-ai",
+      "id": "marketing",
       "label": "01",
+      "title": "Marketing technology",
+      "description": "JavaScript tracking, gtag.js, GA4, Salesforce Marketing Cloud journeys, confirmed HubSpot and Zapier workflows, Marketo, and technical SEO."
+    },
+    {
+      "id": "applied-ai",
+      "label": "02",
       "title": "Applied AI systems",
-      "description": "LLM integration, source-grounded RAG, MCP, tool calling, context design, multi-agent orchestration, evaluation, and human-review boundaries."
+      "description": "LLM integration, source-grounded RAG, MCP, tool calling, context design, and human-review boundaries. Application testing and production verification are distinct from formal AI-quality assessment."
     },
     {
       "id": "enterprise",
-      "label": "02",
+      "label": "03",
       "title": "Enterprise workflows",
       "description": "ERPNext/Frappe, procurement, sales, inventory, approvals, Gmail and Google APIs, operational dashboards, and master-data migration."
-    },
-    {
-      "id": "product",
-      "label": "03",
-      "title": "Full-stack product delivery",
-      "description": "JavaScript, TypeScript, Python, React, Node.js, REST APIs, responsive interfaces, and AI-assisted engineering with owned review."
     },
     {
       "id": "reliability",

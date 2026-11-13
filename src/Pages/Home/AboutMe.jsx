@@ -8,9 +8,9 @@ export default function AboutMe() {
         </div>
         <div className="about-grid__copy">
           <p>
-            I am an AI solutions engineer and software engineer with experience
-            since 2014 across applied AI, AdTech and MarTech, e-commerce, web
-            platforms, and business systems.
+            I build marketing and business automation, with software and systems
+            experience since 2014 across AdTech, MarTech, e-commerce, web
+            platforms, enterprise integrations, and applied AI.
           </p>
           <p>
             My strongest work sits where software meets real operations: learning
@@ -21,7 +21,7 @@ export default function AboutMe() {
           <p>
             I use AI-assisted development while owning the requirements,
             architecture, tradeoffs, review, testing, and delivery outcomes. The
-            goal is not more AI—it is a system people can trust.
+            goal is a useful system with clear controls and verified behavior.
           </p>
         </div>
       </div>

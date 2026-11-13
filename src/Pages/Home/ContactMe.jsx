@@ -8,8 +8,8 @@ export default function ContactMe() {
           <p className="eyebrow">Let's build something useful</p>
           <h2>Have an operational problem that needs a reliable system?</h2>
           <p>
-            I am open to AI solutions, forward-deployed, product engineering,
-            AdTech / MarTech, and business-systems opportunities.
+            I am open to marketing technology, AdTech / MarTech, AI automation,
+            enterprise integration, and business-systems opportunities.
           </p>
         </div>
         <div className="contact-panel__actions">

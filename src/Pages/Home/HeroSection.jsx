@@ -5,22 +5,23 @@ export default function HeroSection() {
     <section id="heroSection" className="hero section-shell">
       <div className="hero__content">
         <p className="eyebrow">{data.profile.eyebrow}</p>
-        <h1>
-          Building AI-enabled systems that work in the <span>real world.</span>
-        </h1>
+        <h1>{data.profile.headline}</h1>
         <p className="hero__lede">{data.profile.summary}</p>
         <div className="button-row">
           <a className="button button--primary" href="#MyPortfolio">
             View selected work
           </a>
-          <a
-            className="button button--secondary"
-            href={data.profile.resumes[0].url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            AI Solutions Resume
-          </a>
+          {data.profile.resumes.map((resume) => (
+            <a
+              key={resume.url}
+              className="button button--secondary"
+              href={resume.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {resume.label}
+            </a>
+          ))}
         </div>
         <div className="hero__facts" aria-label="Career highlights">
           <div>
