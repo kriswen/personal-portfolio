@@ -8,8 +8,8 @@ export default function MySkills() {
           <p className="eyebrow">Expertise</p>
           <h2>From ambiguous workflow to verified system.</h2>
           <p>
-            I combine software engineering, enterprise integration, and applied AI
-            to deliver tools people can safely use in daily operations.
+            I connect marketing platforms and enterprise systems, combining
+            software engineering and applied AI with human review and production checks.
           </p>
         </div>
         <div className="expertise-grid">
